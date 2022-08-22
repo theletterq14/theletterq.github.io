@@ -1,0 +1,39 @@
+/* gradient background */
+.gradient {
+    background: linear-gradient(to bottom, #5864af, #223872) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.woah-square{
+    background: #3f435f;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: bob 5s ease-in-out infinite;
+    -moz-animation: bob 5s ease-in-out infinite;
+    animation: bob 5s ease-in-out infinite;
+}
+
+/* animate bobbing up and down slowly */
+@-webkit-keyframes bob {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f2e67;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
